@@ -1,0 +1,219 @@
+
+.noOrder{
+	width: 690rpx;
+	height: 100rpx;
+	text-align: center;
+	line-height: 100rpx;
+	font-size: 30rpx;
+	font-weight: bold;
+	color:#000;
+	background: #fff;
+	border-radius: 20rpx;
+	margin:30rpx;
+}
+.item{
+	width: 690rpx;
+	height: 300rpx;
+	background: #fff;
+	border-radius: 20rpx;
+	margin:30rpx;
+}
+.item .middle{
+	width: 90%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.middle image{
+	width: 40%;
+	height: 100%;
+}
+.middle .textinfo{
+	height: 90%;
+	width: 60%;
+}
+.bottom{
+/* 	position: fixed;
+	bottom: 50px; */
+	height: 100rpx;
+	width: 100%;
+	background-color: #fff;
+}
+.bottom .sum{
+	float: right;
+	border: 1rpx solid #fff;
+	text-align: center;
+	height: 50rpx;
+	width: 100rpx;
+	border-radius: 30rpx;
+	padding: 10rpx 20rpx;
+	font-size: 26rpx;
+	font-family: SourceHanSansSC;
+	background-image: linear-gradient(to right,#ff9000 0,#ff7000 100%);
+	color: #fff;
+	margin-right: 35rpx;
+	margin-top: 20rpx;
+}
+.bottom .total{
+	float: right;
+	text-align: center;
+	margin-top: 20rpx;
+	margin-right: 35rpx;
+}
+.bottom .total ._span{
+	color: #ff7000;
+}
+.bottom .total ._span ._span{
+	font-size: 34rpx;
+}
+.footer{
+	position: relative;
+	bottom: -15%;
+	right: 0%;
+}
+.choose{
+	float: right;
+	width: 100rpx;
+	background: #fff;
+	
+	padding: 10rpx 20rpx;
+	border: 1px solid #000;
+	border-radius: 2px;
+	margin-right: 20rpx;
+	font-size: 26rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+}
+.isChoose{
+	/* background: #000; */
+	background-image: linear-gradient(to right,#ff9000 0,#ff7000 100%);
+	color: #fff;
+	border: none;
+}
+.del{
+	float: right;
+	border: 1rpx solid #000;
+	border-radius: 10rpx;
+	padding: 10rpx 20rpx;
+	font-size: 26rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	margin-right: 20rpx;
+}
+.f-text{
+	float: left;
+	font-size: 20rpx;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #000;
+	margin-left: 22rpx;
+	margin-top:28rpx;
+}
+.status{
+	font-size: 26rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	padding-top:24rpx;
+	margin-left:22rpx;
+	margin-bottom: 24rpx;
+}
+.clear{
+	clear: both;
+}
+.types{
+	width:464rpx;
+	margin-left:26rpx;
+	font-size: 20rpx;
+	font-family: Adobe Heiti Std;
+	font-weight: normal;
+	color: #000;
+}
+.name{
+	width:464rpx;
+	margin-left:26rpx;
+	font-size: 32rpx;
+	font-family: SourceHanSansSC;
+	font-weight: bold;
+	color: #000;
+	margin-top:20rpx;
+}
+.h-right {
+	position: relative;
+	height: 100%;
+	left: 50%;
+	bottom: 0;
+	/* float: right; */
+}
+.h-right .h-c-img-count image {
+	position: relative;
+	width: 32rpx;
+	height: 32rpx;
+}
+.h-c-img-count input {
+	width: 60rpx;
+	text-align: center;
+	color: #000;
+}
+.h-c-img-count {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.price{
+	width:200px;
+	margin-left:26rpx;
+	font-size: 30rpx;
+	font-family: SourceHanSansSC;
+	font-weight: bold;
+	color: #000;
+}
+.price image{
+	display: block;
+	width: 10%;
+	height: 10%;
+}
+.middle view{
+	float: left;
+}
+.middle image{
+	float: left;
+	width:180rpx;
+	height: 180rpx;
+	border-radius: 20rpx;
+	/* margin-left: 20rpx; */
+}
+.item{
+	width: 690rpx;
+	height: 300rpx;
+	background: #fff;
+	border-radius: 20rpx;
+	margin:30rpx;
+}
+.noactive {
+	font-size: 28rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	height: 100rpx;
+	line-height: 100rpx;
+	width: 33%;
+	text-align: center;
+}
+.active {
+	font-size: 28rpx;
+	font-family: SourceHanSansSC;
+	height: 94rpx;
+	line-height: 100rpx;
+	width: 33%;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+	border-bottom:6rpx solid #000;
+}
+
+

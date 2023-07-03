@@ -1,0 +1,110 @@
+
+page {
+	
+	/*background: linear-gradient(0deg, #091323 0%, #243242 100%);*/
+	background-color: white;
+}
+.amount {
+	/**
+	 * 底部信息
+	 */
+	color: red;
+	clear: both;
+	text-align: right;
+	padding-right: 30rpx;
+	padding-top: 10rpx;
+	border-top: 1rpx solid #8FA9C7;
+}
+.count {
+	float: left;
+	margin-left: 26rpx;
+	margin-top: 30rpx;
+}
+.name {
+	/**
+	 * 订单的名字
+	 */
+	float: left;
+	margin-left: 26rpx;
+	font-size: 32rpx;
+	font-weight: bold;
+	width: 432rpx;
+	margin-top: 30rpx;
+}
+.left {
+	float: left;
+}
+.right {
+	/**
+	 * 内容右侧部分得到单价
+	 */
+	float: right;
+	color: red;
+}
+.content {
+	/**
+	 * 内容部分
+	 */
+	width: 690rpx;
+	margin: 30rpx;
+	background: white;/*35475D*/
+	color: black;/*#8FA9C7*/
+	border-radius: 20rpx;
+	padding-top: 20rpx;
+	padding-bottom: 30rpx;
+	overflow: hidden;
+	
+	/**
+	 * 设置盒子阴影
+	 */
+	/*添加盒子阴影*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.order {
+	margin-bottom: 20rpx;
+	overflow: hidden;
+}
+.order image {
+	width: 180rpx;
+	height: 180rpx;
+	margin-left: 22rpx;
+	float: left;
+	border-radius: 10rpx;
+}
+.button {
+	width: 690rpx;
+	height: 80rpx;
+	margin: 30rpx;
+	font-size: 34rpx;
+	border-radius: 20rpx;
+	background: yellow;/*35475D*/
+	color: black;/*#8FA9C7*/
+	font-family: SourceHanSansSC;
+	line-height: 80rpx;
+	text-align: center;
+}
+.head {
+	width: 690rpx;
+	height: 140rpx;
+	background: white;/*35475D*/
+	border-radius: 20rpx;
+	margin: 30rpx;
+	/*添加盒子阴影*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.create {
+	/*创建成功的文字*/
+	color: black;/*#8FA9C7*/
+	font-size: 40rpx;
+	margin-left: 24rpx;
+	padding-top: 30rpx;
+	font-family: SourceHanSansSC;
+	/*添加盒子阴影*/
+}
+.detail {
+	color: #8FA9C7;
+	font-size: 20rpx;
+	margin-left: 24rpx;
+	font-family: SourceHanSansSC;
+}
+

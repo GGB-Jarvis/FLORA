@@ -1,0 +1,110 @@
+
+page {
+	/**
+	 * background-image: linear-gradient(#091323,#243242) ;
+	 * 
+		background-image: linear-gradient(#091323,#243242) ;
+		
+	 */
+	/* background-color: 	#ffffff; */
+}
+.loading {
+	text-align: center;
+	color: #000;
+	font-size: 20rpx;
+}
+.i-price {
+	text-align: center;
+	font-weight: bold;
+	margin-top: -35rpx;
+	/**
+	 * lc color
+	 */
+	color: #000;
+	font-size: 30rpx;
+	position: relative;
+	/* right: -120rpx; */
+}
+.i-name {
+	/*lc 商品的姓名*/
+	text-align: center;
+	font-size: 32rpx;
+	/*lc 26 */
+	margin-bottom: 26rpx;
+	/*lc  */
+	margin-top: 40rpx;
+	/*30*/
+	color: #888888;
+}
+.content-img {
+	position: relative;
+	bottom: 0rpx;
+	font-family: SourceHanSansSC;
+	color: #fff;
+}
+.c-img-c image {
+    object-fit:cover;
+	width: 100%;
+	height: 100%;
+}
+.c-img-c {
+	background-color: transparent;
+	width: 100%;
+	height: 332rpx;
+}
+.content {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.c-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	margin-bottom: 24rpx;
+	border-top: none;
+	/* background-color: white; */
+}
+.banner {
+	text-align: center;
+	height: 74rpx;
+	margin-top: 38rpx;
+}
+.t-text {
+	/*商品头部信息*/
+	text-align: center;
+	color: #8FA9C7;
+	position: absolute;
+	top: 0rpx;
+	left: 120rpx;
+	font-size: 20rpx;
+}
+.title {
+	position: relative;
+	width: 100%;
+}
+.title image {
+	width: 100%;
+	height: 69rpx;
+	border-radius: 20rpx;
+}
+.banner image {
+	width: 100%;
+	height: 100%;
+}
+.content {
+	display: flex;
+	margin-top: 38rpx;
+}
+.header {
+	margin-top: 0rpx;
+	text-align: center;
+}
+.item {
+	width: 95%;
+	height: 100%;
+	box-shadow: 4px 4px 4px #888888;
+}
+

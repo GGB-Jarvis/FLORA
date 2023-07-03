@@ -1,0 +1,189 @@
+
+@font-face {
+  font-family: titleFont;
+  src: url(/static/font/Amita-Regular.ttf);
+}
+@-webkit-keyframes active {
+from {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
+}
+to {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+}
+@keyframes active {
+from {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 10px 0px rgba(0, 0, 250, 0.6);
+}
+to {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+}
+[role="button"] {
+-webkit-appearance: none;
+-webkit-user-select: none;
+user-select: none;
+display: flex;
+align-items: center;
+justify-content: center;
+outline: none;
+cursor: pointer;
+width: 150px;
+height: 50px;
+text-align: center;
+margin: 30rpx auto;
+background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+border-radius: 30px;
+border: 1px solid #8F9092;
+box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
+transition: all 0.2s ease;
+font-size: 14px;
+font-weight: 600;
+color: #606060;
+text-shadow: 0 1px #fff;
+}
+button::-moz-focus-inner,
+[role="button"]::-moz-focus-inner {
+  border: 0;
+}
+[role="button"]:hover:not([disabled]) {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+[role="button"]:focus:not(:active) {
+  -webkit-animation: active 0.9s alternate infinite;
+          animation: active 0.9s alternate infinite;
+  outline: none;
+}
+[role="button"]:active:not([disabled]) {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+[role="button"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.main {
+	width: 690rpx;
+	height: 940rpx;
+	background: rgba(255,255,254,1);
+	border-radius: 20rpx;
+	margin-top: 220rpx;
+	margin-left: 30rpx;
+}
+.login{
+	color: #000;
+	text-align: center;
+	font-size: 30rpx;
+	text-decoration: underline;
+}
+.logo {
+	width: 388rpx;
+	height: 388rpx;
+	border-radius: 50%;
+	position: absolute;
+	top: -194rpx;
+	left: 180rpx;
+}
+.form {
+	position: absolute;
+	top: 180rpx;
+}
+.form ._h2 {
+	font-size: 50px;
+	position: absolute;
+	top: -100rpx;
+	left: 220rpx;
+	font-family: titleFont;
+}
+.phone input {
+	height: 98rpx;
+}
+.phone view {
+	width:200rpx;
+	height: 78rpx;
+	line-height: 78rpx;
+	margin-right: 20rpx;
+	padding-left: 20rpx;
+	border-left: 2rpx solid #49627E;
+	margin-top:10rpx;
+}
+.phone view:active {
+	color: rgba(128,128,128,1);
+}
+.phone {
+	width: 628rpx;
+	height: 98rpx;
+	border: 1rpx solid #49627E;
+	border-radius: 20rpx;
+	font-size: 32rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	padding-left: 20rpx;
+	margin-top: 30rpx;
+	margin-left: 20rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.form>input {
+	width: 628rpx;
+	height: 98rpx;
+	border: 1rpx solid #49627E;
+	border-radius: 20rpx;
+	font-size: 32rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	padding-left: 20rpx;
+	margin-top: 30rpx;
+	margin-left: 20rpx;
+}
+.placeholder-class {
+	color: rgba(128,128,128,1);
+}
+
+/* .button {
+	width: 473rpx;
+	height: 88rpx;
+	background: #8FA9C7;
+	border-radius: 10rpx;
+	line-height: 88rpx;
+	text-align: center;
+	margin: 30rpx auto;
+	font-size: 30rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #162232;
+} */
+.agreement {
+	margin-left: 30rpx;
+	font-family: SourceHanSansSC;
+	color: #8FA9C7;
+}
+.agreement text {
+	color: skyblue
+}
+.register {
+	float: left;
+	margin-left: 26rpx;
+	color: skyblue
+}
+.forget {
+	float: right;
+	color: skyblue
+}
+.clear {
+	clear: both;
+}
+.fast {
+	text-align: center;
+	margin-top: 120rpx;
+	font-family: SourceHanSansSC;
+	color: #8FA9C7;
+	font-size: 30rpx;
+}
+.fast image {
+	width: 64rpx;
+	height: 64rpx;
+	margin-top: 20rpx;
+}
+

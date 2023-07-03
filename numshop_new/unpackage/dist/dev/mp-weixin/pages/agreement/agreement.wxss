@@ -1,0 +1,14 @@
+
+.content{
+	width:622rpx;
+	margin: 30rpx;
+	border-radius: 20rpx;
+	padding-bottom: 30rpx;
+	background: #fff;
+	font-size: 30rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	padding:34rpx;
+}
+

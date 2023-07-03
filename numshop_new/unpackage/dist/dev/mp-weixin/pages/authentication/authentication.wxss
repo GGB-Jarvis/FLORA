@@ -1,0 +1,66 @@
+
+.a-text{
+	font-size: 24rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+	margin-top:46rpx;
+}
+.a-button{
+	width: 473rpx;
+	height: 88rpx;
+	background: #fff;
+	border: 1rpx solid #000;
+	border-radius: 10rpx;
+	line-height: 88rpx;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40rpx;
+	font-size: 30rpx;
+	color:#162232;
+}
+.form-p{
+	color:#999;
+	font-family: SourceHanSansSC;
+}
+.form input{
+	width: 620rpx;
+	height: 98rpx;
+	border: 1rpx solid #49627E;
+	border-radius: 20rpx;
+	margin-left: auto;
+	margin-right: auto;
+	color:#000;
+	font-size: 32rpx;
+	padding-left: 26rpx;
+	margin-top:34rpx;
+	font-family: SourceHanSansSC;
+}
+.ts{
+	width: 598rpx;
+	font-size: 30rpx;
+	font-family: SourceHanSansSC;
+	font-weight: 400;
+	color: #000;
+	margin-left: 46rpx;
+	margin-top:36rpx;
+}
+.title{
+	font-size: 36rpx;
+	font-family: SourceHanSansSC;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+}
+.content{
+	width: 690rpx;
+	height: 861rpx;
+	background: #fff;
+	border-radius: 20rpx;
+	margin-left:30rpx;
+	margin-top:30rpx;
+	padding-top: 36rpx;
+}
+

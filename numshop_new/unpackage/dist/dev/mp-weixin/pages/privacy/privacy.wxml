@@ -1,0 +1,1 @@
+<view><view class="content"><rich-text nodes="{{protocol.content}}"></rich-text></view></view>
