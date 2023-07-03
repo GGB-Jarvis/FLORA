@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.num.shop.mapper.AddressMapper">
+
+    <resultMap id="BaseResultMap" type="com.num.shop.entity.Address">
+        <result column="id" property="id"/>
+        <result column="userid" property="userid"/>
+        <result column="adressee" property="adressee"/>
+        <result column="phone" property="phone"/>
+        <result column="completedaddress" property="completedaddress"/>
+        <result column="isdefault" property="isdefault"/>
+        <association property="user" column="userid" select="com.num.shop.mapper.UserMapper.getById"></association>
+    </resultMap>
+
+    <!-- 表字段 -->
+    <sql id="baseColumns">
+        t.id
+        , t.userid
+        , t.adressee
+        , t.phone
+        , t.completedaddress
+        , t.isdefault
+    </sql>
+
+    <!-- 查询全部 -->
+    <select id="list" resultMap="BaseResultMap" parameterType="com.num.shop.entity.Address">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM address t
+        <where>
+            <if test="userid!=null and userid!=''">
+                and userid = #{userid}
+            </if>
+
+            <if test="adressee!=null and adressee!=''">
+                and adressee = #{adressee}
+            </if>
+            <if test="phone!=null and phone!=''">
+                and phone = #{phone}
+            </if>
+            <if test="completedaddress!=null and completedaddress!=''">
+                and completedaddress = #{completedaddress}
+            </if>
+            <if test="isdefault!=null and isdefault!=''">
+                and isdefault = #{isdefault}
+            </if>
+        </where>
+        order by id desc
+        <if test="start!=null and pageSize !=0 ">
+            limit #{start} , #{pageSize}
+        </if>
+    </select>
+
+
+    <!-- 查询全部记录数量 -->
+    <select id="total" resultType="int" parameterType="com.num.shop.entity.Address">
+        SELECT
+        count(1)
+        FROM address t
+        <where>
+            <if test="userid!=null and userid!=''">
+                and userid = #{userid}
+            </if>
+
+            <if test="adressee!=null and adressee!=''">
+                and adressee = #{adressee}
+            </if>
+            <if test="phone!=null and phone!=''">
+                and phone = #{phone}
+            </if>
+            <if test="completedaddress!=null and completedaddress!=''">
+                and completedaddress = #{completedaddress}
+            </if>
+            <if test="isdefault!=null and isdefault!=''">
+                and isdefault = #{isdefault}
+            </if>
+        </where>
+    </select>
+
+    <!-- 根据主键获取单条记录 -->
+    <select id="getById" resultMap="BaseResultMap" parameterType="Integer">
+        SELECT
+        <include refid="baseColumns"/>
+        FROM address t
+        WHERE id = #{id}
+    </select>
+
+    <!-- 插入全部字段 -->
+    <insert id="insert" parameterType="com.num.shop.entity.Address"
+            keyProperty="id" keyColumn="id" useGeneratedKeys="true"
+    >
+        INSERT INTO address
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            userid,
+            adressee,
+            phone,
+            completedaddress,
+            isdefault,
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            #{userid},
+            #{adressee},
+            #{phone},
+            #{completedaddress},
+            #{isdefault},
+        </trim>
+    </insert>
+
+
+    <!-- 更新,更新全部字段 -->
+    <update id="update" parameterType="com.num.shop.entity.Address">
+        UPDATE address
+        <set>
+            userid=#{userid},
+            adressee=#{adressee},
+            phone=#{phone},
+            completedaddress=#{completedaddress},
+            isdefault=#{isdefault},
+        </set>
+        WHERE id = #{id}
+    </update>
+
+
+    <!-- 根据主键删除记录 -->
+    <delete id="delete" parameterType="com.num.shop.entity.Address">
+        DELETE FROM address
+        WHERE id = #{id}
+    </delete>
+
+
+</mapper>
